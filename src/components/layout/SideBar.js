@@ -1,52 +1,5 @@
 import Link from "next/link";
-
-const navigationLinks = [
-  {
-    label: "Activity",
-    url: "/",
-    icon: "",
-  },
-  {
-    label: "Deposit",
-    url: "/dashboard/deposit",
-    icon: "",
-  },
-  {
-    label: "News",
-    url: "/dashboard/news",
-    icon: "",
-  },
-  {
-    label: "Messages",
-    url: "/dashboard/messages",
-    icon: "",
-  },
-  {
-    label: "Analytics",
-    url: "/dashboard/analytics",
-    icon: "",
-  },
-  {
-    label: "Announcements",
-    url: "/dashboard/announcements",
-    icon: "",
-  },
-];
-
-const supportButtons = [
-  {
-    label: "Settings",
-    icon: "",
-  },
-  {
-    label: "Help",
-    icon: "",
-  },
-  {
-    label: "Chat",
-    icon: "",
-  },
-];
+import { navigationLinks, supportButtons } from "@/data/navigation";
 
 const SideBar = () => {
   return (
@@ -60,15 +13,21 @@ const SideBar = () => {
           <ul>
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.url}>{link.label}</Link>
+                <Link href={link.url}>
+                  <link.icon />
+                  <span>{link.label}</span>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
         <div className="my-5">
           <h3>Support</h3>
-          {supportButtons.map((button) => (
-            <button>{button.label}</button>
+          {supportButtons.map((b, index) => (
+            <button key={index}>
+              <b.icon />
+              <span>{b.label}</span>
+            </button>
           ))}
         </div>
         <div className="my-5">Meeteam</div>
