@@ -14,31 +14,37 @@ const navigationLinks = [
     label: "Activity",
     url: "/",
     icon: Calendar,
+    notifications: 0,
   },
   {
     label: "Deposit",
     url: "/dashboard/deposit",
     icon: Wallet,
+    notifications: 0,
   },
   {
     label: "News",
     url: "/dashboard/news",
     icon: News,
+    notifications: 1,
   },
   {
     label: "Messages",
     url: "/dashboard/messages",
     icon: Mail,
+    notifications: 2,
   },
   {
     label: "Analytics",
     url: "/dashboard/analytics",
     icon: Graph,
+    notifications: 0,
   },
   {
     label: "Announcements",
     url: "/dashboard/announcements",
     icon: Flag,
+    notifications: 0,
   },
 ];
 
