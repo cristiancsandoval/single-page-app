@@ -8,7 +8,7 @@ const SideBar = () => {
 
   return (
     <aside className="w-80 h-full hidden lg:flex p-5">
-      <div className="bg-slate-700 border-2 border-slate-300 w-full rounded-xl p-5 text-slate-300">
+      <div className="bg-[#23263b] border-2 border-slate-700 w-full rounded-xl p-5 text-slate-300">
         <Link href={"/"} className="py-5 flex gap-2 text-white items-center">
           <span className="p-2 w-10 text-xl text-center aspect-square rounded-full bg-main-gradient">
             M
@@ -25,7 +25,7 @@ const SideBar = () => {
                   className={`flex items-center justify-start text-lg gap-2 py-1 px-2 rounded-2xl w-full border border-transparent ${
                     link.url === pathname
                       ? "bg-main-gradient text-white border-0"
-                      : "hover:border-slate-500 hover:text-white"
+                      : "hover:border-slate-700 hover:text-white"
                   }`}
                 >
                   <link.icon className="text-xl" />
@@ -40,11 +40,11 @@ const SideBar = () => {
             ))}
           </ul>
         </nav>
-        <div className="my-5 pt-2 pb-2 flex flex-col items-start justify-start gap-3 border border-r-0 border-l-0 border-slate-500">
+        <div className="my-5 pt-2 pb-2 flex flex-col items-start justify-start gap-3 border border-r-0 border-l-0 border-slate-700">
           <h3 className="text-lg">Support</h3>
           {supportButtons.map((b, index) => (
             <button
-              className="flex items-center justify-start text-lg gap-2 py-1 px-2 rounded-2xl w-full border border-transparent hover:border-slate-500 hover:text-white"
+              className="flex items-center justify-start text-lg gap-2 py-1 px-2 rounded-2xl w-full border border-transparent hover:border-slate-700 hover:text-white"
               key={index}
             >
               <b.icon className="text-xl" />
