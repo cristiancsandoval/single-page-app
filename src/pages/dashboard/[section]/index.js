@@ -6,7 +6,7 @@ const DashboardSection = () => {
 
   return (
     <div>
-      <h2 className="text-white text-xl font-bold capitalize">{section}</h2>
+      <h2 className="text-white text-xl font-bold capitalize p-5">{section}</h2>
     </div>
   );
 };
