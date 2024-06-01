@@ -8,7 +8,7 @@ const SideBar = () => {
 
   return (
     <aside className="w-80 h-full hidden lg:flex p-5">
-      <div className="bg-[#23263b] border-2 border-slate-700 w-full rounded-xl p-5 text-slate-300">
+      <div className="bg-slate-gradient border-2 border-slate-700 w-full rounded-xl p-5 text-slate-300">
         <Link href={"/"} className="py-5 flex gap-2 text-white items-center">
           <span className="p-2 w-10 text-xl text-center aspect-square rounded-full bg-main-gradient">
             M
