@@ -1,9 +1,14 @@
-import React from 'react'
+import { useRouter } from "next/router";
 
 const DashboardSection = () => {
-  return (
-    <div>DashboardSection</div>
-  )
-}
+  const { query } = useRouter();
+  const { section } = query;
 
-export default DashboardSection
+  return (
+    <div>
+      <h2 className="text-white text-xl font-bold capitalize">{section}</h2>
+    </div>
+  );
+};
+
+export default DashboardSection;
