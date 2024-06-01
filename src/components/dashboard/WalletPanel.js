@@ -8,8 +8,8 @@ const WalletPanel = () => {
         <span>History</span>
         <button>See All</button>
       </div>
-      <table className="table-auto">
-        <tbody className="">
+      <table>
+        <tbody>
           {wallet.map((transaction, i) => (
             <tr key={i} className="text-xs text-indigo-400">
               <td className="py-2">{transaction.concept}</td>

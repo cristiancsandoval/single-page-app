@@ -11,7 +11,7 @@ const LinearChart = () => {
         datasetIdKey="linearChart"
         data={linearChartData}
         width={650}
-        height={500}
+        height={350}
         options={{
           plugins: {
             legend: { display: false },
